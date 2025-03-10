@@ -11,7 +11,7 @@ import com.example.model.Student;
 
 @Repository
 public interface Repo extends JpaRepository<Student, Integer>{
-//	@Query("select s from Student s where s.name = ?1")
-//	List<Student> findByName(String name);
+	@Query("select s from Student s where s.name = ?1")
+	List<Student> findByName(String name);
 
 }
